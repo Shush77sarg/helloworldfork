@@ -1,0 +1,13 @@
+FROM plugins/base:Ubuntu
+
+  LABEL maintainer="Shush77sarg <shushan77sargsyan@gmail.com>" \
+  org.label-schema.name="helloworldfork/.github/workflows/
+" \
+  org.label-schema.vendor="Shush77sarg" \
+  org.label-schema.schema-version="1.0.1"
+
+  EXPOSE 8080
+
+  COPY release/go-github-action-helloworld /bin/
+
+  ENTRYPOINT ["/bin/go-github-action-helloworld"]
