@@ -27,5 +27,5 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          push: true
-          tags: shush77sarg/goapp:0.1.0
+           push: true
+           tags: shush77sarg/goapp:latest
