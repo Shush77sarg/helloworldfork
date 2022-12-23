@@ -3,7 +3,7 @@ name: Go with matrix
 on: [push]
 
 jobs:
-   
+
    build:
     
      strategy:
